@@ -33,7 +33,10 @@
         <div class="container-fluid flex-nowrap gap-3 align-items-center">
             <img src="img/logo.svg" alt="#">
             <form class="d-flex w-100" role="search">
-                <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                <div class="input-group">
+                    <span class="input-group-text border-0 my-search" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control my-search fs-6 shadow-none" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="search" aria-describedby="basic-addon1">
+                </div>
             </form>
             <ul class="d-flex list-unstyled align-items-center gap-3 my-0 ">
                 <li><i class="fa-solid fa-bars"></i></li>
@@ -54,7 +57,7 @@
                                   -->
 
     <section class="container-fluid ">
-        <div class="row">
+        <div class="row flex-nowrap">
 
             <!--      _     _             _                
     (_)   | |           | |               
@@ -65,11 +68,14 @@
                                           
                                            -->
 
-            <div class="d-flex justify-content-center my-side-bar">
+            <div class="d-flex flex-column justify-content-between my-side-bar">
                 <ul class="d-flex flex-column w-100 px-2 mt-4 gap-3">
-                    <li class="list-group-item border-0 p-0 text-light"><i class="fa-solid fa-house mx-2"></i> Home</li>
-                    <li class="list-group-item border-0 p-0 text-light"><i class="fa-solid fa-chart-simple mx-2 "></i>  Stats</li>
-                    <li class="list-group-item border-0 p-0 text-light"><i class="fa-solid fa-signal me-2 "></i> Signals</li>
+                    <li class="list-group-item border-0 p-0 text-light"><i class="fa-solid fa-house mx-2"></i> <span>Home</span></li>
+                    <li class="list-group-item border-0 p-0 text-light"><i class="fa-solid fa-chart-simple mx-2 "></i>  <span>Stats</span></li>
+                    <li class="list-group-item border-0 p-0 text-light"><i class="fa-solid fa-signal me-2 "></i> <span>Signals</span></li>
+                </ul>
+                <ul class="d-flex w-100  px-2">
+                    <li class="list-group-item text-light"><i class="fa-solid fa-gear mx-2 "></i><span>Admin</span></li>
                 </ul>
             </div>
 
@@ -82,12 +88,46 @@
                          
                           -->
 
-            <div class="my-main bg-danger">
-                <div class="row">
-                    
+            <div class="my-main">
+                <div class="row my-nav-main pt-4 flex-nowrap  ">
+                    <div class="col-5 d-flex flex-column justify-content-start">
+                        <div class="d-flex text-light align-items-baseline gap-2">
+                            <H1 class="fs-2 ">Boolean</H1>
+                            <button class="btn my-btn px-2 py-1 rounded-5 text-light" type="submit">Piano Balze</button>
+                        </div>
+                        <div class="pt-2 " style="--bs-breadcrumb-divider:url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item btn my-btn px-2 py-1 rounded-5 text-light text-decoration-none"><span>3 app</span></li>
+                                <li class="breadcrumb-item"></li>
+                                <li class="btn my-btn me-2 px-2 py-1 rounded-5 text-light text-decoration-none"><span>Boolean mobile app</span></li>
+                                <li class="btn my-btn me-2 px-2 py-1 rounded-5 text-light text-decoration-none"><span>Boolean web app</span></li>
+                                <li class="btn my-btn me-2 px-2 py-1 rounded-5 text-light text-decoration-none"><span>Boolean blog app</span></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-4 p-0  d-flex flex-column justify-content-start">
+                        <strong class="text-light">Studenti online negli ultimi 30 minuti</strong>
+                        <strong class="text-light fs-4">125</strong>
+                    </div>
+                    <div class="col-3 p-0 ">
+                        <strong class="text-light">Nuovo studente</strong>
+                        <button type="button" class="btn btn-light  d-inline-block fs-2 py-1">+</button>
+                    </div>
                 </div>
                 <div class="row">
+                    <div class="col-8">
+                        
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item">A fourth item</li>
+                            <li class="list-group-item">And a fifth one</li>
+                          </ul>
+                    </div>
+                    <div class="col-4">
 
+                    </div>
                 </div>
             </div>
         </div>
