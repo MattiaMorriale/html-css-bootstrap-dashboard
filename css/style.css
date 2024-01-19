@@ -1,7 +1,12 @@
 .my-side-bar{
-    height: calc(100vh - 56px);
+    height: calc(100vh - 54px);
+    width: 150px;
+
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
 }
 
 .my-main{
-    height: calc(100vh - 56px);
+    height: calc(100vh - 54px);
+    width:  calc(100vw - 150px);
 }
