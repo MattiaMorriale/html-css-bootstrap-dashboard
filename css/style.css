@@ -20,6 +20,15 @@
     background-color: #1b72e8;
 }
 
+.my-list{
+    transition: ease .2s;
+}
+
+.my-list:hover{
+    background-color: rgb(189, 187, 187);
+    cursor: pointer;
+}
+
 .my-btn{
     background-color: #165bba;
     font-size: 10px;
@@ -41,7 +50,6 @@
 
 .my-span{
     font-size: 15px;
-    font-weight: bold;
     text-align: center;
 }
 
