@@ -24,3 +24,28 @@
     background-color: #165bba;
     font-size: 10px;
 }
+
+.my-img{
+    height: 25px;
+    width: 25px;
+}
+
+.my-code{
+    background-color: #f26551;
+    font-size: 15px;
+    color: white;
+
+    padding: 10px 8px;
+    border-radius: 25px;
+}
+
+.my-span{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.my-th{
+    font-size: 15px;
+    font-weight: normal;
+}
