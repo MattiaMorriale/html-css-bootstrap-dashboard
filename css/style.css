@@ -39,6 +39,10 @@
     width: 25px;
 }
 
+.my-nav-img{
+    height: 38px;
+}
+
 .my-code{
     background-color: #f26551;
     font-size: 15px;
@@ -56,4 +60,19 @@
 .my-th{
     font-size: 15px;
     font-weight: normal;
+}
+
+@media screen and (max-width: 991.98px) {
+    .my-side-bar{
+        height: calc(100vh - 54px);
+        width: 70px;
+    
+        background-image: url(../img/sidebar-bg.png);
+        background-color: #051e34;
+    }
+    
+    .my-main{
+        height: calc(100vh - 54px);
+        width:  calc(100vw - 70px);
+    }
 }

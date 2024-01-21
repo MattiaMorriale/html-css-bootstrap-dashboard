@@ -31,7 +31,8 @@
 
     <nav class="navbar bg-body-tertiary pe-2 ">
         <div class="container-fluid flex-nowrap gap-3 align-items-center">
-            <img src="img/logo.svg" alt="#">
+            <img class="d-none d-lg-block d-xxl-block" src="img/logo.svg" alt="#">
+            <img class="d-block d-lg-none d-xl-none d-xxl-none my-nav-img" src="img/mobile-logo-1.png" alt="#">
             <form class="d-flex w-100" role="search">
                 <div class="input-group">
                     <span class="input-group-text border-0 my-search" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -39,9 +40,9 @@
                 </div>
             </form>
             <ul class="d-flex list-unstyled align-items-center gap-3 my-0 ">
-                <li><i class="fa-solid fa-bars"></i></li>
-                <li><i class="fa-solid fa-circle-question"></i></li>
-                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                <li class="d-none d-lg-block d-xxl-block"><i class="fa-solid fa-bars"></i></li>
+                <li class="d-none d-lg-block d-xxl-block"><i class="fa-solid fa-circle-question"></i></li>
+                <li class="d-none d-lg-block d-xxl-block"><i class="fa-solid fa-ellipsis-vertical"></i></li>
                 <li class="dropstart ">
                     <button class="btn btn-light" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-bell text-warning "></i>
@@ -79,12 +80,12 @@
 
             <div class="d-flex flex-column justify-content-between my-side-bar">
                 <ul class="d-flex flex-column align-items-center px-2 mt-4 gap-3">
-                    <li class="list-group-item border-0  w-100  p-1 text-start text-light my-list"><i class="fa-solid fa-house mx-2"></i><span>Home</span></li>
-                    <li class="list-group-item border-0  w-100  p-1 text-start text-light my-list"><i class="fa-solid fa-chart-simple mx-2 "></i><span>Stats</span></li>
-                    <li class="list-group-item border-0  w-100  p-1 text-start text-light my-list"><i class="fa-solid fa-signal me-2 "></i><span>Signals</span></li>
+                    <li class="list-group-item border-0  w-100  p-1 text-start text-light my-list d-flex  justify-content-center d-lg-block "><i class="fa-solid fa-house mx-2"></i><span class="d-none  d-lg-inline d-xl-inline-block d-xxl-inline-block ">Home</span></li>
+                    <li class="list-group-item border-0  w-100  p-1 text-start text-light my-list d-flex  justify-content-center d-lg-block "><i class="fa-solid fa-chart-simple mx-2"></i><span class="d-none  d-lg-inline d-xl-inline-block d-xxl-inline-block ">Stats</span></li>
+                    <li class="list-group-item border-0  w-100  p-1 text-start text-light my-list d-flex  justify-content-center d-lg-block "><i class="fa-solid fa-signal me-2"></i><span class="d-none d-lg-inline d-xl-inline-block d-xxl-inline-block ">Signals</span></li>
                 </ul>
                 <ul class="d-flex justify-content-center px-2">
-                    <li class="list-group-item text-light text-center w-100 p-1  my-list"><i class="fa-solid fa-gear mx-2 "></i><span>Admin</span></li>
+                    <li class="list-group-item text-light text-start w-100 p-1  my-list d-flex justify-content-center d-lg-block"><i class="fa-solid fa-gear mx-2 "></i><span class="d-none d-lg-inline d-xl-inline-block d-xxl-inline-block ">Admin</span></li>
                 </ul>
             </div>
 
