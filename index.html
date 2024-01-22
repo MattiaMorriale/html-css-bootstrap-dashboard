@@ -122,10 +122,101 @@
                     </div>
                     <div class="col-12 col-sm-3 p-0 px-3 order-1 order-sm-3">
                         <strong class="text-light me-3 ">Nuovo studente</strong>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                           <i class="fa-sharp fa-solid fa-plus"></i>
                         </button>
+                        
+                        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <div>
+                              <form class="row g-3">
+                                <div class="col-6">
+                                  <label for="inputEmail4" class="form-label">Nome</label>
+                                  <input type="text" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-6">
+                                  <label for="inputPassword4" class="form-label">Cognome</label>
+                                  <input type="text" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <div class="d-flex flex-nowrap input-group">
+                                    <div class="input-group-text">@</div>
+                                    <input type="email" class="form-control" id="autoSizingInputGroup">
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-6">
+                                  <label for="inputEmail4" class="form-label">Indirizzo Mail</label>
+                                  <div class="d-flex flex-nowrap input-group">
+                                    <div class="input-group-text">@</div>
+                                    <input type="email" class="form-control" id="autoSizingInputGroup">
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                
+                                <div class="col-12">
+                                  <label for="inputAddress2" class="form-label">Indirizzo</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                
+                                <div class="col-6">
+                                  <label for="inputCity" class="form-label">Città</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-4">
+                                  <label for="inputState" class="form-label">Stato</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Italia</option>
+                                    <option selected>Israele</option>
+                                    <option selected>Danimarca</option>
+                                    <option selected>Egitto</option>
+                                    <option selected>Figi</option>
+                                    <option selected>Haiti</option>
+                                    <option selected>Giappone</option>
+                                    <option selected>Cina</option>
+                                    <option selected>Korea</option>
+                                    <option selected>Belgio</option>
+                                    
+                                  </select>
+                                </div>
+                                <div class="col-2">
+                                  <label for="inputZip" class="form-label">CAP</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputEmail4" class="form-label">Foto</label>
+                                  <div class="d-flex flex-nowrap input-group">
+                                    <input type="file" class="form-control" id="autoSizingInputGroup" placeholder="Nessun File Selezionato">
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Selezione per proseguire
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button type="submit" class="btn btn-primary">Salva</button>
+                                  <button type="reset" class="btn bg-warning">Svuota</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="row">
